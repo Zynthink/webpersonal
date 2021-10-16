@@ -256,12 +256,12 @@ header .bar ul li a:hover{
 }
 
 .info h3 span {
-    color: #ffbb00;
+    color: var(--kuning);
     font-size: 1rem;
     position: absolute;
     top: -1.1rem;
     left: 0.5rem;
-    background-color: white;
+    background-color: var(--white);
     padding: 1px 5px;
     border-radius: 0.4rem;
     -webkit-border-radius: 0.4rem;
