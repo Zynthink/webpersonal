@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+:root{
+    --white:#ffffff;
+    --kuning: #fec934;
+    --hitam: #383938;
+}
+/* pallet : #ffffff putih
+            #fec934 kuning
+            #383938 hitam */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all;
+}
+
+*::selection {
+    background: var(--kuning);
+    color: #333;
+}
+
+html{
+    font-size: 15px;
+    overflow-x: hidden;
+
+}
+
+/* ==================
+    scrollbar
+   ==================*/
+
+html::-webkit-scrollbar{
+    width: 0.6rem;
+
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--white);
+    
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--kuning);
+    
+}
+
+body{ 
+    background:var(--white);
+    overflow-x: hidden;
+}
+
+/* ==================
+    button
+   ==================*/
+
+.btn {
+    padding: .5rem 3rem;
+    background: var(--hitam);
+    color: var(--kuning);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+
+#botton{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #383933;
+    color: var(--kuning);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: block;
+}
+
+/* ==================
+    sosmed button btn
+   ==================*/
+
+.contact {
+    margin-left: 1.1rem;
+}
+
+.sosmed-btn {
+    font-size: 2.5rem;
+    background-color: white;
+    color: var(--hitam);
+}
+
+.sosmed-btn:hover{
+    color: black;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* ==================
+    Header (sidebar atau navbar)
+   ==================*/
+
+header.toggle{
+    left: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: -120%;
+    z-index: 1000;
+    height: 100%;
+    width: 30rem;
+    background: var(--kuning);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.4rem solid var(--white);
+
+}
+
+header .user .nama{
+    font-size: 2rem;
+    color:var(--hitam);
+
+}
+
+header .user .job{
+    font-size: 1.5rem;
+    color: var(--hitam);
+    
+}
+
+header .bar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+
+}
+
+header .bar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: var(--hitam);
+    color:var(--kuning);
+    font-size: 1.5rem;
+    border-radius: 2rem;
+
+}
+
+header .bar ul li a:hover{
+    background: var(--white);
+
+}
+
+/* ==================
+    about html
+   ==================*/
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid var(--hitam);
+    color: var(--kuning);
+}
+
+.heading span{
+    color: var(--hitam);
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 5rem;
+}
+
+.menu h3 {
+    font-size: 2rem;
+    color: var(--hitam);
+}
+
+.menu h1 {
+    font-size: 3rem;
+    color: var(--hitam);
+}
+
+.menu p{
+    font-size: 1rem;
+    color:var(--hitam);
+    padding: 1rem 0;
+}
+
+.data .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    
+}
+
+.data .row .info {
+    flex: 1 1 30rem;
+    padding-left: 4rem;
+    padding: 4rem 1rem;
+    
+}
+
+.videoframe{
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+.info{
+    margin-left: 2rem;
+}
+
+.info h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 26px;
+    margin-left: 1rem;
+    border: 2px solid rgb(128, 128, 128);
+    padding: 0.6rem;
+    padding-left: 2rem;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+}
+
+.info h3 span {
+    color: #ffbb00;
+    font-size: 1rem;
+    position: absolute;
+    top: -1.1rem;
+    left: 0.5rem;
+    background-color: white;
+    padding: 1px 5px;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+
+
+@media screen and (min-width: 880px) {
+    
+    #botton{
+        display: none;
+    }
+
+    section {
+        margin-left: 30rem;
+    }
+
+    header {
+        left: 0;
+    }
+}
